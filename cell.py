@@ -1,5 +1,9 @@
 class Cell:
-    def __init__(self , symbol = None):
+    def __init__(self , symbol = "*"):
         self.symbol = symbol
-        self.isMarked = False
-        
+
+    def isMarked(self):
+        if self.symbol == "X" or self.symbol == "O":
+            return True
+        else:
+            return False    
